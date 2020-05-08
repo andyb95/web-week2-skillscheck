@@ -175,10 +175,12 @@ let total = myNumbers.reduce((acc, e) => acc += e)
 
 // Code Here
 
+
 let myNumbersIndex = []
-myNumbers.forEach(function(e, index){
-	myNumbersIndex.push(e[index])
+myNumbers.forEach((e, index) =>{
+	myNumbersIndex.push(index)
 })
+	
 
 
 //////////////////PROBLEM 18////////////////////
@@ -205,7 +207,7 @@ const people = [
 // Code Here
 
 let enemies = people.filter(function(e){
-	return friend === false
+	return e.friend === false
 })
 
 //////////////////PROBLEM 20////////////////////
